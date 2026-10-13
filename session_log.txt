@@ -1,0 +1,408 @@
+Script started on 2026-10-13 03:38:00+00:00 [TERM="dumb" TTY="/dev/pts/2" COLUMNS="160" LINES="15"]
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m~[00m$ kcloudshell\pwd
+/home/noctisadamkent
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m~[00m$ kcloudshell\cd /etc
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/etc[00m$ kcloudshell\cd ..
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\cd /
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls
+bin		   boot  etc	 home  lib64		  media  opt   root  sbin		 srv  tmp  var
+bin.usr-is-merged  dev	 google  lib   lib.usr-is-merged  mnt	 proc  run   sbin.usr-is-merged  sys  usr
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls   s   -l
+total 80
+lrwxrwxrwx   1 root root    7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Apr 15 06:53 bin.usr-is-merged
+drwxr-xr-x   2 root root 4096 Apr 22  2024 boot
+drwxr-xr-x  11 root root 3120 Oct 13 03:21 dev
+drwxr-xr-x   1 root root 4096 Oct 13 03:21 etc
+drwxr-xr-x   1 root root 4096 Oct  1 08:15 google
+drwxr-xr-x   4 root root 4096 Oct 13 03:21 home
+lrwxrwxrwx   1 root root    7 Apr 22  2024 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Apr 22  2024 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Nov 14  2024 lib.usr-is-merged
+drwxr-xr-x   2 root root 4096 Sep 11 02:03 media
+drwxr-xr-x   2 root root 4096 Sep 11 02:03 mnt
+drwxr-xr-x   1 root root 4096 Oct 13 03:21 opt
+dr-xr-xr-x 167 root root    0 Oct 13 03:21 proc
+drwxr-xr-x   3 root root 4096 Oct 13 03:21 root
+drwxr-xr-x   1 root root 4096 Oct 13 03:21 run
+lrwxrwxrwx   1 root root    8 Apr 22  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Jul 31 03:50 sbin.usr-is-merged
+drwxr-xr-x   2 root root 4096 Sep 11 02:03 srv
+dr-xr-xr-x  13 root root    0 Oct 13 03:21 sys
+drwxrwxrwt   1 root root 4096 Oct 13 03:38 tmp
+drwxr-xr-x   1 root root 4096 Sep 11 02:03 usr
+drwxr-xr-x   1 root root 4096 Oct 13 03:21 var
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls /etc
+adduser.conf		cron.monthly	fstab	     hosts.deny       logcheck	      nanorc		 pulse		sensors.d	   sysctl.d
+alternatives		crontab		fuse.conf    init.d	      login.defs      networks		 python3	services	   systemd
+apache2			cron.weekly	gai.conf     initramfs-tools  logrotate.d     nftables.conf	 python3.12	sgml		   terminfo
+apparmor		cron.yearly	gdb	     inputrc	      lsb-release     nsswitch.conf	 rc0.d		shadow		   timezone
+apparmor.d		dbus-1		gemini-cli   iproute2	      lxc	      opt		 rc1.d		shadow-		   tmpfiles.d
+apt			dconf		gitconfig    issue	      lynx	      os-release	 rc2.d		shells		   tmux.conf
+bash.bashrc		debconf.conf	gnutls	     issue.net	      machine-id      PackageKit	 rc3.d		skel		   ucf.conf
+bash_completion		debian_version	gprofng.rc   java-17-openjdk  magic	      pam.conf		 rc4.d		ssh		   udev
+bash_completion.d	debuginfod	groff	     java-21-openjdk  magic.mime      pam.d		 rc5.d		ssl		   ufw
+bindresvport.blacklist	default		group	     kernel	      manpath.config  passwd		 rc6.d		subgid		   update-motd.d
+binfmt.d		deluser.conf	group-	     ld.so.cache      mc	      passwd-		 rcS.d		subgid-		   vconsole.conf
+ca-certificates		depmod.d	gshadow      ld.so.conf       mercurial       perl		 redis		subuid		   vim
+ca-certificates.conf	dhcpcd.conf	gshadow-     ld.so.conf.d     mime.types      php		 resolv.conf	subuid-		   vulkan
+cloud			docker		gss	     legal	      mke2fs.conf     pip.conf		 rmt		sudo.conf	   wgetrc
+containerd		dpkg		gtk-2.0      libaudit.conf    modprobe.d      polkit-1		 rpc		sudoers		   X11
+credstore		e2scrub.conf	gtk-3.0      libnl-3	      modules	      postgresql	 rsyslog.conf	sudoers.d	   xattr.conf
+credstore.encrypted	emacs		host.conf    locale.alias     modules-load.d  postgresql-common  rsyslog.d	sudo_logsrvd.conf  xdg
+cron.d			environment	hostname     locale.conf      motd	      profile		 security	supercat	   xml
+cron.daily		ethertypes	hosts	     locale.gen       mtab	      profile.d		 selinux	supervisor
+cron.hourly		fonts		hosts.allow  localtime	      mysql	      protocols		 sensors3.conf	sysctl.conf
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls /bin /sbin
+/bin:
+'['				      gdb				 msggrep		     ruby
+ aa-enabled			      gdb-add-index			 msginit		     ruby3.2
+ aa-exec			      gdbtui				 msgmerge		     runc
+ aa-features-abi		      gdbus				 msgunfmt		     runcon
+ aclocal			      gdbus-codegen			 msguniq		     run-parts
+ aclocal-1.16			      gem				 mt			     rust-analyzer
+ acyclic			      gem3.2				 mt-gnu			     rustc
+ add-apt-repository		      gencat				 mv			     rustdoc
+ addpart			      geqn				 myisam_ftdump		     rustfmt
+ addr2line			      getconf				 mysql			     rust-gdb
+ agy				      getent				 mysqladmin		     rust-lldb
+ alloydb-auth-proxy		      getopt				 mysqlanalyze		     rustup
+ apropos			      gettext				 mysqlcheck		     rview
+ apt				      gettextize			 mysql_config_editor	     rvim
+ apt-add-repository		      gettext.sh			 mysqldump		     savelog
+ apt-cache			      gh				 mysqldumpslow		     scalar
+ apt-cdrom			      gi-compile-repository		 mysqlimport		     sccmap
+ apt-config			      gi-decompile-typelib		 mysqloptimize		     scp
+ apt-get			      gi-inspect-typelib		 mysqlpump		     script
+ apt-key			      ginstall-info			 mysqlrepair		     scriptlive
+ apt-mark			      gio				 mysqlreport		     scriptreplay
+ ar				      gio-querymodules			 mysqlshow		     sdiff
+ arch				      git				 mysqlslap		     sed
+ as				      git-credential-gcloud.sh		 namei			     select-editor
+ autoconf			      git-receive-pack			 nano			     sensible-browser
+ autoheader			      git-shell				 nawk			     sensible-editor
+ autom4te			      git-upload-archive		 ncurses6-config	     sensible-pager
+ automake			      git-upload-pack			 ncursesw6-config	     sensible-terminal
+ automake-1.16			      gke-gcloud-auth-plugin		 neato			     seq
+ autoreconf			      glib-compile-resources		 neqn			     serialver
+ autoscan			      glib-compile-schemas		 netstat		     setarch
+ autoupdate			      glib-genmarshal			 networkctl		     setpriv
+ awk				      glib-gettextize			 newgrp			     setsid
+ b2sum				      glib-mkenums			 ngettext		     setterm
+ base32				      gmake				 nice			     sfdp
+ base64				      gml2gv				 nisdomainname		     sftp
+ basename			      gobject-query			 nl			     sg
+ basenc				      gold				 nm			     sh
+ bash				      gp-archive			 nohup			     sha1sum
+ bashbug			      gpasswd				 nomos			     sha224sum
+ bcomps				      gp-collect-app			 nop			     sha256sum
+ bq				      gp-display-html			 nproc			     sha384sum
+ bundle				      gp-display-src			 nroff			     sha512sum
+ bundle3.2			      gp-display-text			 nsenter		     shasum
+ bundler			      gpg				 nslookup		     shred
+ bundler3.2			      gpg2				 nstat			     shtool
+ bunzip2			      gpg-agent				 nsupdate		     shtoolize
+ busctl				      gpgconf				 numfmt			     shuf
+ bzcat				      gpg-connect-agent			 objcopy		     size
+ bzcmp				      gpgparsemail			 objdump		     skaffold
+ bzdiff				      gpgsm				 od			     skill
+ bzegrep			      gpgsplit				 openssl		     slabtop
+ bzexe				      gpgtar				 osage			     sleep
+ bzfgrep			      gpgv				 package-go-module	     slogin
+ bzgrep				      gpic				 pager			     snice
+ bzip2				      gprof				 parallel		     soelim
+ bzip2recover			      gprofng				 partx			     sort
+ bzless				      graphml2gv			 passwd			     spanner-cli
+ bzmore				      grep				 paste			     splain
+ c++				      gresource				 patch			     split
+ c89				      groff				 patchwork		     sponge
+ c89-gcc			      grog				 pathchk		     sqlite3
+ c99				      grops				 pcre2-config		     ss
+ c99-gcc			      grotty				 pdb3			     ssh
+ captoinfo			      groups				 pdb3.12		     ssh-add
+ cargo				      gsettings				 pear			     ssh-agent
+ cargo-clippy			      gsutil				 peardev		     ssh-argv0
+ cargo-fmt			      gtbl				 pecl			     ssh-copy-id
+ cargo-miri			      gtester				 pee			     ssh-keygen
+ cat				      gtester-report			 peekfd			     ssh-keyscan
+ catman				      gtk-update-icon-cache		 perl			     stat
+ cbt				      gunzip				 perl5.38.2		     stdbuf
+ cc				      gv2gml				 perl5.38-x86_64-linux-gnu   strace
+ ccomps				      gv2gxl				 perlbug		     strace-log-merge
+ c++filt			      gvcolor				 perldoc		     streamzip
+ cgclassify			      gvgen				 perlivp		     strings
+ cgcreate			      gvmap				 perlthanks		     strip
+ cgdelete			      gvmap.sh				 pg_archivecleanup	     stty
+ cgexec				      gvpack				 pg_backupcluster	     su
+ cgget				      gvpr				 pg_basebackup		     sudo
+ cgset				      gxl2dot				 pgbench		     sudoedit
+ cgsnapshot			      gxl2gv				 pg_config		     sudoreplay
+ chage				      gzexe				 pg_config.libpq-dev	     sum
+ chattr				      gzip				 pg_conftool		     supervisorctl
+ chcon				      h2ph				 pg_createcluster	     supervisord
+ chfn				      h2xs				 pg_ctlcluster		     sync
+ chg				      h5c++				 pg_dropcluster		     syntax_suggest3.2
+ chgrp				      h5cc				 pg_dump		     systemctl
+ chmod				      h5fc				 pg_dumpall		     systemd
+ choom				      hardlink				 pg_isready		     systemd-ac-power
+ chown				      hd				 pg_lsclusters		     systemd-analyze
+ chronic			      head				 pg_receivewal		     systemd-ask-password
+ chrt				      helpztags				 pg_receivexlog		     systemd-cat
+ chsh				      hexdump				 pg_recvlogical		     systemd-cgls
+ circo				      hg				 pg_renamecluster	     systemd-cgtop
+ cksum				      hg-ssh				 pgrep			     systemd-confext
+ clangd				      host				 pg_restore		     systemd-creds
+ clangd-14			      hostid				 pg_restorecluster	     systemd-cryptenroll
+ clear				      hostname				 pg_upgradecluster	     systemd-cryptsetup
+ clear_console			      hostnamectl			 pg_virtualenv		     systemd-delta
+ clippy-driver			      htop				 phar			     systemd-detect-virt
+ cloud-run-proxy		      i386				 phar8.3		     systemd-escape
+ cloud-sql-proxy		      iconv				 phar8.3.phar		     systemd-firstboot
+ cloud_sql_proxy		      id				 phar.phar		     systemd-hwdb
+ cluster			      ifdata				 phar.phar8.3		     systemd-id128
+ clusterdb			      ifnames				 php			     systemd-inhibit
+ cmake				      ifne				 php8.3			     systemd-machine-id-setup
+ cmp				      inetutils-telnet			 php-cgi		     systemd-mount
+ col				      infocmp				 php-cgi8.3		     systemd-notify
+ colcrt				      infotocap				 php-config		     systemd-path
+ colrm				      install				 php-config8.3		     systemd-repart
+ column				      install-info			 phpize			     systemd-run
+ combine			      instmodsh				 phpize8.3		     systemd-socket-activate
+ comm				      ionice				 pic			     systemd-stdio-bridge
+ composer			      ip				 pico			     systemd-sysext
+ containerd			      ipcmk				 piconv			     systemd-sysusers
+ containerd-shim-runc-v2	      ipcrm				 pidof			     systemd-tmpfiles
+ corelist			      ipcs				 pidproxy		     systemd-tty-ask-password-agent
+ cp				      iptables-xml			 pidwait		     systemd-umount
+ cpack				      irb				 pigz			     tabs
+ cpan				      irb3.2				 pinentry		     tac
+ cpan5.38-x86_64-linux-gnu	      ischroot				 pinentry-curses	     tail
+ cpio				      istioctl				 ping			     tar
+ cpp				      isutf8				 ping4			     taskset
+ cpp-13				      jar				 ping6			     tbl
+ createdb			      jarsigner				 pinky			     tee
+ createlang			      java				 pip			     telnet
+ createuser			      javac				 pip3			     tempfile
+ c_rehash			      javadoc				 pip3.12		     test
+ crontab			      javap				 pkaction		     tic
+ csplit				      jcmd				 pkcheck		     timedatectl
+ ctags				      jconsole				 pkgconf		     timeout
+ ctags.emacs			      jdb				 pkg-config		     tload
+ ctest				      jdeprscan				 pkill			     toe
+ ctpu				      jdeps				 pkttyagent		     top
+ ctr				      jexec				 pl2pm			     touch
+ ctstat				      jfr				 pldd			     tput
+ curl				      jhsdb				 pmap			     tr
+ curl-config			      jimage				 pod2html		     tred
+ cut				      jinfo				 pod2man		     troff
+ cvtsudoers			      jlink				 pod2text		     true
+ dash				      jmap				 pod2usage		     truncate
+ date				      jmod				 podchecker		     ts
+ dbus-cleanup-sockets		      join				 pr			     tset
+ dbus-daemon			      journalctl			 preconv		     tsort
+ dbus-monitor			      jpackage				 printenv		     tty
+ dbus-run-session		      jps				 printf			     twopi
+ dbus-send			      jq				 prlimit		     typeprof3.2
+ dbus-update-activation-environment   jrunscript			 protoc			     tzselect
+ dbus-uuidgen			      jshell				 prove			     ucf
+ dd				      json_pp				 prtstat		     ucfq
+ debconf			      jstack				 prune			     ucfr
+ debconf-apt-progress		      jstat				 ps			     uclampset
+ debconf-communicate		      jstatd				 pslog			     udevadm
+ debconf-copydb			      jwebserver			 psql			     ul
+ debconf-escape			      kbxutil				 pstree			     ulockmgr_server
+ debconf-set-selections		      kernel-install			 pstree.x11		     umount
+ debconf-show			      keytool				 ptar			     uname
+ deb-systemd-helper		      kill				 ptardiff		     uncompress
+ deb-systemd-invoke		      killall				 ptargrep		     unexpand
+ delpart			      kmod				 ptx			     unflatten
+ delv				      kpt				 pwd			     uniq
+ dev_appserver.py		      kubectl				 pwdx			     unlink
+ df				      last				 py3clean		     unlzma
+ dh_autotools-dev_restoreconfig       lastb				 py3compile		     unminimize
+ dh_autotools-dev_updateconfig	      lastlog				 py3versions		     unmkinitramfs
+ dh_bash-completion		      lcf				 pydoc			     unpigz
+ dh_installxmlcatalogs		      lckdo				 pydoc3			     unshare
+ diff				      ld				 pydoc3.12		     unxz
+ diff3				      ld.bfd				 pygettext3		     unzip
+ diffimg			      ldd				 pygettext3.12		     unzipsfx
+ dig				      ld.gold				 python			     update-alternatives
+ dijkstra			      ld.so				 python3		     update-mime-database
+ dir				      lefty				 python3.12		     update_rubygems
+ dircolors			      less				 python3.12-config	     uptime
+ dirmngr			      lessecho				 python3-config		     users
+ dirmngr-client			      lessfile				 qemu-aarch64		     utmpdump
+ dirname			      lesskey				 qemu-aarch64_be	     vacuumdb
+ dmesg				      lesspipe				 qemu-aarch64_be-static      vacuumlo
+ dnsdomainname			      lexgrog				 qemu-aarch64-static	     varlinkctl
+ docker				      libnetcfg				 qemu-alpha		     vdir
+ docker-credential-gcloud	      libtoolize			 qemu-alpha-static	     vi
+ dockerd			      link				 qemu-amd64		     vidir
+ dockerd-rootless-setuptool.sh	      linux32				 qemu-amd64-static	     view
+ dockerd-rootless.sh		      linux64				 qemu-arm		     vim
+ docker-proxy			      linux-check-removal		 qemu-arm64		     vim.basic
+ domainname			      linux-update-symlinks		 qemu-arm64-static	     vimdiff
+ dot				      linux-version			 qemu-armeb		     vimdot
+ dot2gxl			      ln				 qemu-armeb-static	     vimtutor
+ dot_builtins			      lneato				 qemu-armel		     vipe
+ dotty				      lnstat				 qemu-armel-static	     vmstat
+ dpkg				      locale				 qemu-armhf		     vmtouch
+ dpkg-architecture		      locale-check			 qemu-armhf-static	     w
+ dpkg-buildapi			      localectl				 qemu-arm-static	     wall
+ dpkg-buildflags		      localedef				 qemu-cris		     watch
+ dpkg-buildpackage		      local-extract			 qemu-cris-static	     watchgnupg
+ dpkg-buildtree			      logger				 qemu-hexagon		     wc
+ dpkg-checkbuilddeps		      login				 qemu-hexagon-static	     wdctl
+ dpkg-deb			      loginctl				 qemu-hppa		     wget
+ dpkg-distaddfile		      logname				 qemu-hppa-static	     whatis
+ dpkg-divert			      look				 qemu-i386		     whereis
+ dpkg-genbuildinfo		      ls				 qemu-i386-static	     which
+ dpkg-genchanges		      lsattr				 qemu-loong64		     which.debianutils
+ dpkg-gencontrol		      lsblk				 qemu-loong64-static	     who
+ dpkg-gensymbols		      lsb_release			 qemu-loongarch64	     whoami
+ dpkg-maintscript-helper	      lscgroup				 qemu-loongarch64-static     whois
+ dpkg-mergechangelogs		      lscpu				 qemu-m68k		     write
+ dpkg-name			      lsinitramfs			 qemu-m68k-static	     www-browser
+ dpkg-parsechangelog		      lsipc				 qemu-microblaze	     X11
+ dpkg-query			      lslocks				 qemu-microblazeel	     x86_64
+ dpkg-realpath			      lslogins				 qemu-microblazeel-static    x86_64-linux-gnu-addr2line
+ dpkg-scanpackages		      lsmem				 qemu-microblaze-static      x86_64-linux-gnu-ar
+ dpkg-scansources		      lsmod				 qemu-mips		     x86_64-linux-gnu-as
+ dpkg-shlibdeps			      lsns				 qemu-mips64		     x86_64-linux-gnu-c++filt
+ dpkg-source			      lspgpot				 qemu-mips64el		     x86_64-linux-gnu-cpp
+ dpkg-split			      lssubsys				 qemu-mips64el-static	     x86_64-linux-gnu-cpp-13
+ dpkg-statoverride		      lto-dump				 qemu-mips64-static	     x86_64-linux-gnu-dwp
+ dpkg-trigger			      lto-dump-13			 qemu-mipsel		     x86_64-linux-gnu-elfedit
+ dpkg-vendor			      lxc-attach			 qemu-mipsel-static	     x86_64-linux-gnu-g++
+ dropdb				      lxc-autostart			 qemu-mipsn32		     x86_64-linux-gnu-g++-13
+ droplang			      lxc-cgroup			 qemu-mipsn32el		     x86_64-linux-gnu-gcc
+ dropuser			      lxc-checkconfig			 qemu-mipsn32el-static	     x86_64-linux-gnu-gcc-13
+ du				      lxc-checkpoint			 qemu-mipsn32-static	     x86_64-linux-gnu-gcc-ar
+ dwp				      lxc-config			 qemu-mips-static	     x86_64-linux-gnu-gcc-ar-13
+ ebrowse			      lxc-console			 qemu-nios2		     x86_64-linux-gnu-gcc-nm
+ ebrowse.emacs			      lxc-copy				 qemu-nios2-static	     x86_64-linux-gnu-gcc-nm-13
+ echo				      lxc-create			 qemu-or1k		     x86_64-linux-gnu-gcc-ranlib
+ echo_supervisord_conf		      lxc-destroy			 qemu-or1k-static	     x86_64-linux-gnu-gcc-ranlib-13
+ edgepaint			      lxc-device			 qemu-powerpc		     x86_64-linux-gnu-gcov
+ editor				      lxc-execute			 qemu-powerpc-static	     x86_64-linux-gnu-gcov-13
+ egrep				      lxc-freeze			 qemu-ppc		     x86_64-linux-gnu-gcov-dump
+ elfedit			      lxc-info				 qemu-ppc64		     x86_64-linux-gnu-gcov-dump-13
+ emacs				      lxc-ls				 qemu-ppc64el		     x86_64-linux-gnu-gcov-tool
+ emacsclient			      lxc-monitor			 qemu-ppc64el-static	     x86_64-linux-gnu-gcov-tool-13
+ emacsclient.emacs		      lxc-snapshot			 qemu-ppc64le		     x86_64-linux-gnu-gi-compile-repository
+ emacs-nox			      lxc-start				 qemu-ppc64le-static	     x86_64-linux-gnu-gi-decompile-typelib
+ enc2xs				      lxc-stop				 qemu-ppc64-static	     x86_64-linux-gnu-gi-inspect-typelib
+ encguess			      lxc-top				 qemu-ppc-static	     x86_64-linux-gnu-gold
+ env				      lxc-unfreeze			 qemu-riscv32		     x86_64-linux-gnu-gp-archive
+ envsubst			      lxc-unpriv-attach			 qemu-riscv32-static	     x86_64-linux-gnu-gp-collect-app
+ eqn				      lxc-unpriv-start			 qemu-riscv64		     x86_64-linux-gnu-gp-display-html
+ erb				      lxc-unshare			 qemu-riscv64-static	     x86_64-linux-gnu-gp-display-src
+ erb3.2				      lxc-update-config			 qemu-s390x		     x86_64-linux-gnu-gp-display-text
+ errno				      lxc-usernsexec			 qemu-s390x-static	     x86_64-linux-gnu-gprof
+ etags				      lxc-wait				 qemu-sh4		     x86_64-linux-gnu-gprofng
+ etags.emacs			      lynx				 qemu-sh4eb		     x86_64-linux-gnu-ld
+ ex				      lzcat				 qemu-sh4eb-static	     x86_64-linux-gnu-ld.bfd
+ expand				      lzcmp				 qemu-sh4-static	     x86_64-linux-gnu-ld.gold
+ expiry				      lzdiff				 qemu-sparc		     x86_64-linux-gnu-lto-dump
+ expr				      lzegrep				 qemu-sparc32plus	     x86_64-linux-gnu-lto-dump-13
+ factor				      lzfgrep				 qemu-sparc32plus-static     x86_64-linux-gnu-nm
+ faillog			      lzgrep				 qemu-sparc64		     x86_64-linux-gnu-objcopy
+ fallocate			      lzless				 qemu-sparc64-static	     x86_64-linux-gnu-objdump
+ false				      lzma				 qemu-sparc-static	     x86_64-linux-gnu-pkgconf
+ fc-cache			      lzmainfo				 qemu-x86_64		     x86_64-linux-gnu-pkg-config
+ fc-cat				      lzmore				 qemu-x86_64-static	     x86_64-linux-gnu-python3.12-config
+ fc-conflist			      m4				 qemu-xtensa		     x86_64-linux-gnu-python3-config
+ fc-list			      make				 qemu-xtensaeb		     x86_64-linux-gnu-ranlib
+ fc-match			      make-first-existing-target	 qemu-xtensaeb-static	     x86_64-linux-gnu-readelf
+ fc-pattern			      man				 qemu-xtensa-static	     x86_64-linux-gnu-size
+ fc-query			      mandb				 racc3.2		     x86_64-linux-gnu-strings
+ fc-scan			      manpath				 rake			     x86_64-linux-gnu-strip
+ fc-validate			      man.REAL				 rake3.2		     xargs
+ fdp				      man-recode			 ranlib			     xgettext
+ fgrep				      mawk				 rbash			     xsubpp
+ file				      mc				 rbs3.2			     xz
+ find				      mcdiff				 rdbg3.2		     xzcat
+ findmnt			      mcedit				 rdma			     xzcmp
+ flock				      mcookie				 rdoc			     xzdiff
+ fmt				      mcview				 rdoc3.2		     xzegrep
+ fold				      md5sum				 readelf		     xzfgrep
+ free				      md5sum.textutils			 readlink		     xzgrep
+ funzip				      mdig				 realpath		     xzless
+ fuser				      mesg				 recode-sr-latin	     xzmore
+ fusermount			      migrate-pubring-from-classic-gpg	 redis-benchmark	     yes
+ g++				      mingle				 redis-check-aof	     ypdomainname
+ g++-13				      minikube				 redis-check-rdb	     zcat
+ gapplication			      mispipe				 redis-cli		     zcmp
+ gc				      mkdir				 redis-server		     zdiff
+ gcc				      mkfifo				 reindexdb		     zdump
+ gcc-13				      mknod				 rename.ul		     zegrep
+ gcc-ar				      mkpasswd				 renice			     zfgrep
+ gcc-ar-13			      mktemp				 reset			     zforce
+ gcc-nm				      mm2gv				 resizepart		     zgrep
+ gcc-nm-13			      mongosh				 rev			     zip
+ gcc-ranlib			      more				 rgrep			     zipcloak
+ gcc-ranlib-13			      mount				 ri			     zipdetails
+ gcloud				      mountpoint			 ri3.2			     zipgrep
+ gcloud-crc32c			      msgattrib				 rls			     zipinfo
+ gcore				      msgcat				 rm			     zipnote
+ gcov				      msgcmp				 rmdir			     zipsplit
+ gcov-13			      msgcomm				 rmiregistry		     zless
+ gcov-dump			      msgconv				 rnano			     zmore
+ gcov-dump-13			      msgen				 rootlesskit		     znew
+ gcov-tool			      msgexec				 routel			     zrun
+ gcov-tool-13			      msgfilter				 rpcgen
+ gcsfuse			      msgfmt				 rtstat
+
+/sbin:
+aa-load		       debugfs		     getpcaps			  iptables-nft-save	      pam_extrausers_chkpwd  sudo_sendlog
+aa-remove-unknown      delgroup		     getty			  iptables-restore	      pam_extrausers_update  sulogin
+aa-status	       deluser		     groupadd			  iptables-restore-translate  pam_getenv	     swaplabel
+aa-teardown	       depmod		     groupdel			  iptables-save		      pam_namespace_helper   swapoff
+accessdb	       devlink		     groupmems			  iptables-translate	      pam_timestamp_check    swapon
+addgnupghome	       dhcpcd		     groupmod			  iptunnel		      pg_updatedicts	     switch_root
+addgroup	       dnsmasq		     grpck			  isosize		      phpdismod		     sysctl
+add-shell	       dpkg-preconfigure     grpconv			  killall5		      phpenmod		     tarcat
+adduser		       dpkg-reconfigure      grpunconv			  ldattach		      phpquery		     tc
+agetty		       dumpe2fs		     halt			  ldconfig		      pivot_root	     telinit
+apparmor_parser        e2freefrag	     iconvconfig		  ldconfig.real		      plipconfig	     tipc
+apparmor_status        e2fsck		     ifconfig			  libgvc6-config-update       policy-rc.d	     tune2fs
+applygnupgdefaults     e2image		     init			  locale-gen		      poweroff		     unix_chkpwd
+arp		       e2label		     initctl			  logsave		      pwck		     unix_update
+arpd		       e2mmpstatus	     init.lxc			  losetup		      pwconv		     update-binfmts
+arptables	       e2scrub		     init.lxc.static		  lsmod			      pwhistory_helper	     update-ca-certificates
+arptables-nft	       e2scrub_all	     insmod			  make-ssl-cert		      pwunconv		     update-catalog
+arptables-nft-restore  e2undo		     installkernel		  mii-tool		      qemu-debootstrap	     update-icon-caches
+arptables-nft-save     e4crypt		     install-sgmlcatalog	  mke2fs		      rarp		     update-info-dir
+arptables-restore      e4defrag		     invoke-rc.d		  mkfs			      readprofile	     update-initramfs
+arptables-save	       ebtables		     ip				  mkfs.bfs		      reboot		     update-java-alternatives
+badblocks	       ebtables-nft	     ip6tables			  mkfs.cramfs		      remove-shell	     update-locale
+blkdiscard	       ebtables-nft-restore  ip6tables-apply		  mkfs.ext2		      resize2fs		     update-passwd
+blkid		       ebtables-nft-save     ip6tables-legacy		  mkfs.ext3		      rmmod		     update-rc.d
+blkzone		       ebtables-restore      ip6tables-legacy-restore	  mkfs.ext4		      rmt		     update-shells
+blockdev	       ebtables-save	     ip6tables-legacy-save	  mkfs.minix		      rmt-tar		     update-xmlcatalog
+bridge		       ebtables-translate    ip6tables-nft		  mkhomedir_helper	      route		     useradd
+capsh		       faillock		     ip6tables-nft-restore	  mkinitramfs		      rsyslogd		     userdel
+cgclear		       filefrag		     ip6tables-nft-save		  mklost+found		      rtacct		     usermod
+cgconfigparser	       findfs		     ip6tables-restore		  mkswap		      rtcwake		     validlocale
+cgrulesengd	       fsck		     ip6tables-restore-translate  modinfo		      rtmon		     vdpa
+chcpu		       fsck.cramfs	     ip6tables-save		  modprobe		      runlevel		     vigr
+chgpasswd	       fsck.ext2	     ip6tables-translate	  mount.fuse		      runuser		     vipw
+chmem		       fsck.ext3	     ipmaddr			  mount.fuse.gcsfuse	      service		     visudo
+chpasswd	       fsck.ext4	     iptables			  mount.gcsfuse		      setcap		     wipefs
+chroot		       fsck.minix	     iptables-apply		  nameif		      shadowconfig	     xtables-legacy-multi
+cpgr		       fsfreeze		     iptables-legacy		  newusers		      shutdown		     xtables-monitor
+cppw		       fstab-decode	     iptables-legacy-restore	  nfnl_osf		      slattach		     xtables-nft-multi
+cron		       fstrim		     iptables-legacy-save	  nft			      sshd		     zic
+ctrlaltdel	       genl		     iptables-nft		  nologin		      start-stop-daemon      zramctl
+dcb		       getcap		     iptables-nft-restore	  pam-auth-update	      sudo_logsrvd
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls ~
+README-cloudshell.txt  session_log.txt
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls -a ~
+.   .bash_history  .bashrc  .codeoss  .docker  .npm	 README-cloudshell.txt	.sudo_as_admin_successful
+..  .bash_logout   .cache   .config   .gemini  .profile  session_log.txt	.vscode
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\ls -lh /boot
+total 0
+]0;Cloud Shellnoctisadamkent@cloudshell:[1;34m/[00m$ kcloudshell\exit
+exit
+
+Script done on 2026-10-13 03:40:22+00:00 [COMMAND_EXIT_CODE="0"]
